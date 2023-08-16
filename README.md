@@ -42,7 +42,7 @@ In the preprocessing phase data is cleaned, missing values are handled, and expl
 
 ## Machine Learning Modeling
 
-The machine learning model is built using Scikit-learn and is implemented in the `Models.ipynb` Jupyter Notebook. This model predicts the consultation fee for doctors based on the provided attributes.
+The machine learning model is built using Scikit-learn and is implemented in the `ML_Models.ipynb` Jupyter Notebook. This model predicts the consultation fee for doctors based on the provided attributes.
 
 ## Web Application
 
@@ -64,7 +64,7 @@ The `Web Application` directory houses the following files and subfolders for th
 
 1. Explore the data extraction process and raw data in the `Data Extraction` directory.
 2. Review data preprocessing steps and cleaned data in the `Data Preprocessing` directory.
-3. Understand the machine learning model creation in the `ML_Modeling` directory.
+3. Understand the machine learning model creation in the `ML_Models` directory.
 4. Run the web application using the code provided in the `Web Application` directory (`app.py`).
 5. Input the required attributes on the web page to receive a predicted consultation fee.
 
