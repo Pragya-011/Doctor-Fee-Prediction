@@ -1,7 +1,5 @@
 # Doctor-Fee-Prediction
 
-# Doctor Fee Prediction
-
 Predicting consultation fees of doctors based on various attributes using machine learning and an interactive web application.
 
 ## Overview
