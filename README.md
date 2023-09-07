@@ -2,7 +2,7 @@
   Doctor-Fee-Prediction
 </h1>
 
-<p align="center"><img src="https://cutewallpaper.org/24/medical-gif/medical-animation-by-gurmeet-singh-on-dribbble.gif" width="1000" ></p>
+<p align="center"><img src="https://im3.ezgif.com/tmp/ezgif-3-58403fe33c.gif" width="1100" ></p>
 <br>
 
 ##  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/25b24795113117.5e8f78637283d.gif" width="45" height="45"> **Overview**
