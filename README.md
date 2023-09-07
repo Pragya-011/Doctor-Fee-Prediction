@@ -1,12 +1,28 @@
-# Doctor-Fee-Prediction
+<h1 align = "center">
+  Doctor-Fee-Prediction
+</h1>
 
-Predicting consultation fees of doctors based on various attributes using machine learning and an interactive web application.
+<p align="center"><img src="https://cutewallpaper.org/24/medical-gif/medical-animation-by-gurmeet-singh-on-dribbble.gif" width="1000" ></p>
+<br>
 
-## Overview
+##  <img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="48" height="48"> **Overview**
 
 The **Doctor's Fee Prediction** project focuses on predicting consultation fees for doctors based on attributes such as specialty, experience, location, and more. The project involves data extraction, preprocessing, model building, and an interactive web application.
 
-## Table of Contents
+<br>
+
+##  <img src="https://user-images.githubusercontent.com/106439762/181935629-b3c47bd3-77fb-4431-a11c-ff8ba0942b63.gif" width="45" height="45"> **User's Manual**
+
+| Files/Folder| Description |
+| ------------- | ------------- |
+| **`Python Files`** | Review the data extraction process and preprocessing steps |
+| **`Python Files/ML_Models.ipynb`** | Understand the machine learning model creation  |
+| **`DATA`** | Explore the raw and cleaned data  |
+| **`Web Application`** | Run the web application using the provided code |
+
+<br>
+
+## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="48" height="48"> **Table of Contents**
 
 - [Project Details](#project-details)
 - [Data Extraction](#data-extraction)
@@ -14,14 +30,17 @@ The **Doctor's Fee Prediction** project focuses on predicting consultation fees 
 - [Machine Learning Modeling](#machine-learning-modeling)
 - [Web Application](#web-application)
 - [Presentation](#presentation)
-- [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
+
+<br>
 
 ## Project Details
 
 This project utilizes Python libraries such as NumPy and Pandas for data cleaning and preprocessing purposes. Matplotlib and Seaborn are used for data analysis and visualization. Scikit-learn (sklearn) is employed for building the machine learning model. Flask, HTML, and CSS are used to build an interactive website.
 
 The main objective is to predict doctor consultation fees based on the following attributes:
+
+<img align="right" alt="Coding" width="220" src="https://www.suyogcare.in/assets/img/%E2%81%ADgif2.gif">
 
 - `speciality_of_doctor`: Specialty of the doctor
 - `degree_type`: Type of degree (e.g., MBBS, MD, BDS)
@@ -31,7 +50,9 @@ The main objective is to predict doctor consultation fees based on the following
 - `dp_score`: Doctor-patient experience score
 - `npv_`: Number of people's votes
 
-## Python Files
+<br>
+
+## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="48" height="48"></a> **Python Files**
 
 ### Data Extraction
 - The data extraction phase involves collecting raw doctor information from the online medical consultancy booking site Practo. This is achieved using the Jupyter Notebook `Scrapping code.ipynb`.
@@ -42,13 +63,17 @@ The main objective is to predict doctor consultation fees based on the following
 ### Machine Learning Modeling
 - The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook `ML_Models.ipynb`. This model predicts the consultation fee for doctors based on the provided attributes.
 
-## DATA
+<br>
+
+## <a href="#Data"><img src="https://ps.w.org/post-to-csv/assets/icon-256x256.gif?rev=2620179" width="48" height="48"></a> **Data**
 
 ### Raw Data
 - The collected data is stored in `raw_practo.csv`.
 
 ### Cleaned Data
 - The cleaned data is saved in `clean_practo.csv`.
+
+<br>
 
 ## Web Application
 
@@ -61,20 +86,15 @@ The project includes an interactive web application developed with Flask. The ap
 - `templates/`: Directory containing the HTML template for the interactive web application.
   - `index.html`: HTML template allowing users to input attributes and get predicted fees.
 
+<br>
+
 ## Presentation
 
 - `Doctor Fee Prediction.pdf`: Presentation showcasing project details and insights.
 
 - `README.md`: Overview of the project, its structure, and usage instructions.
 
-
-## Usage
-
-1. Review the data extraction process and preprocessing steps in the `Python Files` directory.
-2. Understand the machine learning model creation in the `Python Files/ML_Models.ipynb` directory.
-3. Explore the raw and cleaned data in the `DATA` directory.
-4. Run the web application using the code provided in the `Web Application` directory (`Web Application/app.py`).
-5. Input the required attributes on the web page to receive a predicted consultation fee.
+<br>
 
 ## Acknowledgments
 
