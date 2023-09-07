@@ -28,7 +28,7 @@ The **Doctor's Fee Prediction** project focuses on predicting consultation fees 
 - [Data Extraction](#data-extraction)
 - [Data Preprocessing](#data-preprocessing)
 - [Machine Learning Modeling](#machine-learning-modeling)
-- [Web Application](#web-application)
+5. [Web Application](#web-application)
 - [Presentation](#presentation)
 - [Acknowledgments](#acknowledgments)
 
@@ -75,7 +75,7 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## Web Application
+## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://cdn.dribbble.com/users/653870/screenshots/14626585/media/9ff7a9485edff0893e622848862d0080.gif" width="32" height="32"></a> Web Application</h2>
 
 The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as `model.pkl`, is integrated into the web application.
 
