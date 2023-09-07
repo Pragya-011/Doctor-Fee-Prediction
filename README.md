@@ -5,7 +5,7 @@
 <p align="center"><img src="https://cutewallpaper.org/24/medical-gif/medical-animation-by-gurmeet-singh-on-dribbble.gif" width="1000" ></p>
 <br>
 
-##  <img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="48" height="48"> **Overview**
+##  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/25b24795113117.5e8f78637283d.gif" width="45" height="45"> **Overview**
 
 The **Doctor's Fee Prediction** project focuses on predicting consultation fees for doctors based on attributes such as specialty, experience, location, and more. The project involves data extraction, preprocessing, model building, and an interactive web application.
 
@@ -28,13 +28,13 @@ The **Doctor's Fee Prediction** project focuses on predicting consultation fees 
 - [Data Extraction](#data-extraction)
 - [Data Preprocessing](#data-preprocessing)
 - [Machine Learning Modeling](#machine-learning-modeling)
-5. [Web Application](#web-application)
+- [Web Application](#web-application)
 - [Presentation](#presentation)
 - [Acknowledgments](#acknowledgments)
 
 <br>
 
-## Project Details
+## <h2 class="section-heading" id="project-details"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="50" height="50"></a> Project Details</h2>
 
 This project utilizes Python libraries such as NumPy and Pandas for data cleaning and preprocessing purposes. Matplotlib and Seaborn are used for data analysis and visualization. Scikit-learn (sklearn) is employed for building the machine learning model. Flask, HTML, and CSS are used to build an interactive website.
 
@@ -52,7 +52,7 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="48" height="48"></a> **Python Files**
+## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
 ### Data Extraction
 - The data extraction phase involves collecting raw doctor information from the online medical consultancy booking site Practo. This is achieved using the Jupyter Notebook `Scrapping code.ipynb`.
@@ -65,7 +65,7 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <a href="#Data"><img src="https://ps.w.org/post-to-csv/assets/icon-256x256.gif?rev=2620179" width="48" height="48"></a> **Data**
+## <a href="#Data"><img src="https://ps.w.org/post-to-csv/assets/icon-256x256.gif?rev=2620179" width="50" height="50"></a> **Data**
 
 ### Raw Data
 - The collected data is stored in `raw_practo.csv`.
@@ -75,7 +75,7 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://cdn.dribbble.com/users/653870/screenshots/14626585/media/9ff7a9485edff0893e622848862d0080.gif" width="32" height="32"></a> Web Application</h2>
+## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://media2.giphy.com/media/IateADsrO1rDOep6PY/giphy.gif?cid=6c09b952im399xndln3k3nwi7ts0zvuvxcg95q6yb6oe87sc&ep=v1_stickers_related&rid=giphy.gif&ct=s" width="50" height="50"></a> Web Application</h2>
 
 The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as `model.pkl`, is integrated into the web application.
 
@@ -86,9 +86,12 @@ The project includes an interactive web application developed with Flask. The ap
 - `templates/`: Directory containing the HTML template for the interactive web application.
   - `index.html`: HTML template allowing users to input attributes and get predicted fees.
 
+       <img align="center" alt="Coding" lenght = "500" width="600" src="https://user-images.githubusercontent.com/118491345/266401208-eae93f76-f82f-4015-a2fb-222ff60fde77.png">
+
+
 <br>
 
-## Presentation
+## <h2 class="section-heading" id="presentation"><a href="your_link_here"><img src="https://media.tenor.com/Tw7ociOZPzkAAAAM/spreadsheet-animated.gif" width="55" height="55"></a> Presentation</h2>
 
 - `Doctor Fee Prediction.pdf`: Presentation showcasing project details and insights.
 
@@ -96,6 +99,6 @@ The project includes an interactive web application developed with Flask. The ap
 
 <br>
 
-## Acknowledgments
+## <h2 class="section-heading" id="acknowledgments"><a href="your_link_here"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3364a095113117.5e8f786372e94.gif" width="50" height="50"></a> Acknowledgments</h2>
 
 We extend our appreciation to the mentors and faculty members for their guidance and support throughout the project.
