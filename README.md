@@ -5,7 +5,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/118491345/266513700-87067a09-c520-46e8-a4af-a333fec16500.gif" width="1100" ></p>
 <br>
 
-The **Doctor Fee Prediction** project revolutionizes healthcare decision-making. The data was harnessed from Practo, a leading healthcare platform, and applied advanced data analysis and machine learning to empower patients with accurate doctor fee estimates. By considering factors like specialization and experience, our user-friendly tool enhances transparency and aids in cost-effective healthcare choices. Join us as we explore how data science transforms the healthcare landscape, from data collection to predictive modeling and deployment.The project involves data extraction, preprocessing, model building, and an interactive web application.
+The **Doctor Fee Prediction** project revolutionizes healthcare decision-making. The data was harnessed from Practo, a leading healthcare platform, and applied advanced data analysis and machine learning to empower patients with accurate doctor fee estimates. By considering factors like specialization and experience, our user-friendly tool enhances transparency and aids in cost-effective healthcare choices. Join us as we explore how data science transforms the healthcare landscape, from data collection to predictive modeling and deployment. The project involves data extraction, preprocessing, model building, and an interactive web application.
 
 <br>
 
@@ -13,10 +13,11 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 
 | Files/Folder| Description |
 | ------------- | ------------- |
-| *[`Python File`](Python%20File)* | Review the data extraction process and preprocessing steps |
-| *[`Python File/ML_Models.ipynb`](Python%20File/ML_Models.ipynb)* | Understand the machine learning model creation  |
-| *[`DATA`](Data)* | Explore the raw and cleaned data  |
-| *[`Webpage`](Webpage)* | Run the web page using the provided code |
+| **[`Python File`](Python%20File)** | Review the data extraction process and preprocessing steps |
+| **[`Python File/ML_Models.ipynb`](Python%20File/ML_Models.ipynb)** | Understand the machine learning model creation  |
+| **[`DATA`](Data)** | Explore the raw and cleaned data  |
+| **[`Webpage`](Webpage)** | Run the web page using the provided code |
+| **[`Project Presentation`](Doctor%20Fee%20Prediction.pdf)** | Gain deeper insights from the presentation and findings|
 
 <br>
 
@@ -62,26 +63,27 @@ This project primarily aims to benefit patients in the healthcare sector. It pro
 ## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
 ### Data Extraction
-- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of your analysis. This is achieved using the Jupyter Notebook [`Scrapping code`](#Python%20File/Scrapping%20code.ipynb`). The collected data is stored in `raw_practo.csv`.
+- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of your analysis. This is achieved using the Jupyter Notebook [`Scrapping code`](Python%20File/Scrapping%20code.ipynb). The collected data is stored in [`Raw practo`](Data/raw_practo.csv).
 
 ### Data Preprocessing
-- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase exploratory data analysis were also performed on cleaned data. The Jupyter Notebook [`Preprocessing EDA`](#Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data is saved in `clean_practo.csv`.
+- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data is saved in [`Clean practo`](Data/clean_practo.csv).
 
 ### Machine Learning Modeling
-- In the model building phase of our project, we diligently prepared the data for training. This involved encoding categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales. With the data ready, we split it into training and testing sets. Next, we delved into exploring various machine learning models to predict doctor's fees. Following extensive testing and evaluation, we identified the RandomForestRegressor as the top-performing model, boasting the highest accuracy among all alternatives. We conducted rigorous performance assessments using metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE). Ultimately, we chose the RandomForestRegressor as our model of choice and saved it using the Pickle library, marking the completion of our model-building process for future deployment.
-The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](#Python%20File/ML_Models.ipynb).
+- In the model-building phase of our project, we diligently prepared the data for training. This involved encoding categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales. With the data ready, we split it into training and testing sets. Next, we delved into exploring various machine learning models to predict doctor's fees. Following extensive testing and evaluation, we identified the RandomForestRegressor as the top-performing model, boasting the highest accuracy among all alternatives. We conducted rigorous performance assessments using metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE). Ultimately, we chose the RandomForestRegressor as our model of choice and saved it using the Pickle library, marking the completion of our model-building process for future deployment.
+The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](Python%20File/ML_Models.ipynb).
 
 <br>
 
 ## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://i.pinimg.com/originals/45/a1/b5/45a1b55abd622e5a3b41992325f175bf.gif" width="50" height="50"></a> Web Application</h2>
-The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as `model.pkl`, is integrated into the web application.
+The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as [`Model`](Webpage/model.pkl), is integrated into the web application.
 
 ### Directory Structure for Web Application
 
-- `app.py`: Flask application handling user inputs and serving the web page.
-- `model.pkl`: Trained machine learning model for predicting consultation fees.
-- `templates/`: Directory containing the HTML template for the interactive web application.
-  - `index.html`: HTML template allowing users to input attributes and get predicted fees.
+- [`Application`](Webpage/app.py): Flask application handling user inputs and serving the web page.
+- [`Model`](Webpage/model.pkl): Trained machine learning model for predicting consultation fees.
+- [`Webpage Templates`](Webpage/templates): Directory containing the HTML template for the interactive web application.
+  - [`Webpage`](Webpage/templates/index.html): HTML template allowing users to input attributes and get predicted fees.
+  - [`Webpage`](Webpage/requirements.txt): Requirements of all necessary libraries.
 
        <img align="center" alt="Coding" lenght = "500" width="600" src="https://user-images.githubusercontent.com/118491345/266401208-eae93f76-f82f-4015-a2fb-222ff60fde77.png">
 
@@ -89,23 +91,20 @@ The project includes an interactive web application developed with Flask. The ap
 <br>
 
 ## <h2 class="section-heading" id="insights-and-visualizations"><a href="your_link_here"><img src="https://media2.giphy.com/media/IateADsrO1rDOep6PY/giphy.gif?cid=6c09b952im399xndln3k3nwi7ts0zvuvxcg95q6yb6oe87sc&ep=v1_stickers_related&rid=giphy.gif&ct=s" width="50" height="50"></a> Insights and Visualizations</h2>
- - `Doctor Fee Prediction.pdf`: Presentation showcasing project details and insights.
 <br>
 
- - Geographical Distribution: Approximately 50% of the doctors in are located in Bangalore, highlighting the city's significance in healthcare services.
+ - **`Geographical Distribution`**: Approximately 50% of the doctors are located in Bangalore, highlighting the city's significance in healthcare services.
+ - **`Common Degrees`**: MBBS and BDS emerge as the most prevalent degrees among the doctors in your dataset, underscoring their popularity and importance in the medical field.
+ - **`Dentistry Dominance`**: Dentists, as indicated by the high count, appear to be a prominent group within the dataset, reflecting the relevance of dental care in the healthcare system.
+ - **`Experience Range`**: The majority of doctors fall within the 20-25 years of experience range, indicating a substantial presence of seasoned professionals.
+ - **`Specialization Experience`**: Among different specializations, bariatric surgeons have the highest average years of experience, likely due to the complexity and specialized nature of their field. In contrast, chiropractors have the lowest average years of experience, possibly due to the nature of their practice, which may attract newer professionals.
+   
 <br>
-
- - Common Degrees: MBBS and BDS emerge as the most prevalent degrees among the doctors in your dataset, underscoring their popularity and importance in the medical field.
+<p align="center"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/e0a3984f-a673-4bc9-972c-4ca48acfd573" height="400" width="400"></p>
 <br>
-
- - Dentistry Dominance: Dentists, as indicated by the high count, appear to be a prominent group within the dataset, reflecting the relevance of dental care in the healthcare system.
+<p align="center"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/6a18ae83-cb10-4d3b-9a1f-9f7636922753" ></p>
 <br>
-
- - Experience Range: The majority of doctors fall within the 20-25 years of experience range, indicating a substantial presence of seasoned professionals.
-<br>
-
- - Specialization Experience: Among different specializations, bariatric surgeons have the highest average years of experience, likely due to the complexity and specialized nature of their field. In contrast, chiropractors have the lowest average years of experience, possibly due to the nature of their practice, which may attract newer professionals.
-
+<p align="center"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/0905ba6e-b8cf-4647-a41a-44fa194ad091" ></p>
 
 
 <br>
