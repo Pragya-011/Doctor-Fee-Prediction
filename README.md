@@ -54,7 +54,7 @@ The main objective is to predict doctor consultation fees based on the following
 <br>
 
 ## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://i.pinimg.com/originals/ca/d1/3b/cad13bab63529947fa266158bebf8c05.gif" width="50" height="50"></a> Problems Aim to Solve</h2>
-
+This project primarily aims to benefit patients in the healthcare sector. It provides a user-friendly platform for patients to estimate doctor's fees, enabling informed decision-making about medical expenses. By analyzing data on doctor specializations, experience levels, and regional fee variations, the project empowers patients to navigate the complex healthcare cost landscape. Its ultimate goal is to enhance transparency and affordability in healthcare, promoting patient-centered access to quality medical services.
 
 
 <br>
@@ -62,23 +62,14 @@ The main objective is to predict doctor consultation fees based on the following
 ## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
 ### Data Extraction
-- The data extraction phase involves collecting raw doctor information from the online medical consultancy booking site Practo. This is achieved using the Jupyter Notebook [`Scrapping code`](#Python%20File/Scrapping%20code.ipynb`).
+- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of your analysis. This is achieved using the Jupyter Notebook [`Scrapping code`](#Python%20File/Scrapping%20code.ipynb`). The collected data is stored in `raw_practo.csv`.
 
 ### Data Preprocessing
-- In the preprocessing phase data is cleaned, missing values are handled, and exploratory data analysis is performed. The Jupyter Notebook [`Preprocessing EDA`](#Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code.
+- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase exploratory data analysis were also performed on cleaned data. The Jupyter Notebook [`Preprocessing EDA`](#Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data is saved in `clean_practo.csv`.
 
 ### Machine Learning Modeling
-- The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](#Python%20File/ML_Models.ipynb). This model predicts the consultation fee for doctors based on the provided attributes.
-
-<br>
-
-## <a href="#Data"><img src="https://ps.w.org/post-to-csv/assets/icon-256x256.gif?rev=2620179" width="50" height="50"></a> **Data**
-
-### Raw Data
-- The collected data is stored in `raw_practo.csv`.
-
-### Cleaned Data
-- The cleaned data is saved in `clean_practo.csv`.
+- In the model building phase of our project, we diligently prepared the data for training. This involved encoding categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales. With the data ready, we split it into training and testing sets. Next, we delved into exploring various machine learning models to predict doctor's fees. Following extensive testing and evaluation, we identified the RandomForestRegressor as the top-performing model, boasting the highest accuracy among all alternatives. We conducted rigorous performance assessments using metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE). Ultimately, we chose the RandomForestRegressor as our model of choice and saved it using the Pickle library, marking the completion of our model-building process for future deployment.
+The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](#Python%20File/ML_Models.ipynb).
 
 <br>
 
