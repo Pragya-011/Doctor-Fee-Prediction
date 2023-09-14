@@ -5,37 +5,38 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/118491345/266513700-87067a09-c520-46e8-a4af-a333fec16500.gif" width="1100" ></p>
 <br>
 
-##  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/25b24795113117.5e8f78637283d.gif" width="45" height="45"> **Overview**
-
-The **Doctor's Fee Prediction** project focuses on predicting consultation fees for doctors based on attributes such as specialty, experience, location, and more. The project involves data extraction, preprocessing, model building, and an interactive web application.
+The **Doctor Fee Prediction** project focuses on predicting consultation fees for doctors based on attributes such as specialty, experience, location, and more. The project involves data extraction, preprocessing, model building, and an interactive web application.
 
 <br>
 
-##  <img src="https://user-images.githubusercontent.com/106439762/181935629-b3c47bd3-77fb-4431-a11c-ff8ba0942b63.gif" width="45" height="45"> **User's Manual**
+## <h2 class="section-heading" id="usage"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/106439762/181935629-b3c47bd3-77fb-4431-a11c-ff8ba0942b63.gif" width="50" height="50"></a> User's Manual</h2>
 
 | Files/Folder| Description |
 | ------------- | ------------- |
-| **`Python Files`** | Review the data extraction process and preprocessing steps |
-| **`Python Files/ML_Models.ipynb`** | Understand the machine learning model creation  |
-| **`DATA`** | Explore the raw and cleaned data  |
-| **`Web Application`** | Run the web application using the provided code |
+| **[`Python File`](#Python%20File)** | Review the data extraction process and preprocessing steps |
+| **[`Python File/ML_Models.ipynb`](#Python%20File/ML_Models.ipynb)** | Understand the machine learning model creation  |
+| **[`DATA`](#Data)** | Explore the raw and cleaned data  |
+| **[`Webpage`](#Webpage)** | Run the web page using the provided code |
 
 <br>
 
 ## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="48" height="48"> **Table of Contents**
 
-- [Project Details](#project-details)
-- [Data Extraction](#data-extraction)
-- [Data Preprocessing](#data-preprocessing)
-- [Machine Learning Modeling](#machine-learning-modeling)
-- [Web Application](#web-application)
-- [Presentation](#presentation)
-- [Acknowledgments](#acknowledgments)
+- [`User's Manual`](#usage)
+- [`Project Overview`](#project-overview)
+- [`Problems Aim to Solve`](#objective)
+- [`Data Extraction`](#data-extraction)
+- [`Data Preprocessing`](#data-preprocessing)
+- [`Insights and Visualizations`](#insights-and-visualizations)
+- [`Machine Learning Modeling`](#machine-learning-modeling)
+- [`Web Application`](#web-application)
+- [`Challenges and Learnings`](#challenges_and_learnings)
+- [`Future Scope`](#future_scope)
+- [`Conclusion`](#conclusion)
 
 <br>
 
-## <h2 class="section-heading" id="project-details"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="50" height="50"></a> Project Details</h2>
-
+## <h2 class="section-heading" id="project-overview"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="50" height="50"></a> Project Overview</h2>
 This project utilizes Python libraries such as NumPy and Pandas for data cleaning and preprocessing purposes. Matplotlib and Seaborn are used for data analysis and visualization. Scikit-learn (sklearn) is employed for building the machine learning model. Flask, HTML, and CSS are used to build an interactive website.
 
 The main objective is to predict doctor consultation fees based on the following attributes:
@@ -52,16 +53,22 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
+## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://i.pinimg.com/originals/ca/d1/3b/cad13bab63529947fa266158bebf8c05.gif" width="50" height="50"></a> Problems Aim to Solve</h2>
+
+
+
+<br>
+
 ## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
 ### Data Extraction
-- The data extraction phase involves collecting raw doctor information from the online medical consultancy booking site Practo. This is achieved using the Jupyter Notebook `Scrapping code.ipynb`.
+- The data extraction phase involves collecting raw doctor information from the online medical consultancy booking site Practo. This is achieved using the Jupyter Notebook [`Scrapping code`](#Python%20File/Scrapping%20code.ipynb`).
 
 ### Data Preprocessing
-- In the preprocessing phase data is cleaned, missing values are handled, and exploratory data analysis is performed. The Jupyter Notebook `Preprocessing_EDA.ipynb` includes the cleaning and visualization code.
+- In the preprocessing phase data is cleaned, missing values are handled, and exploratory data analysis is performed. The Jupyter Notebook [`Preprocessing EDA`](#Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code.
 
 ### Machine Learning Modeling
-- The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook `ML_Models.ipynb`. This model predicts the consultation fee for doctors based on the provided attributes.
+- The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](#Python%20File/ML_Models.ipynb). This model predicts the consultation fee for doctors based on the provided attributes.
 
 <br>
 
@@ -75,8 +82,7 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://media2.giphy.com/media/IateADsrO1rDOep6PY/giphy.gif?cid=6c09b952im399xndln3k3nwi7ts0zvuvxcg95q6yb6oe87sc&ep=v1_stickers_related&rid=giphy.gif&ct=s" width="50" height="50"></a> Web Application</h2>
-
+## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://i.pinimg.com/originals/45/a1/b5/45a1b55abd622e5a3b41992325f175bf.gif" width="50" height="50"></a> Web Application</h2>
 The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as `model.pkl`, is integrated into the web application.
 
 ### Directory Structure for Web Application
@@ -91,14 +97,19 @@ The project includes an interactive web application developed with Flask. The ap
 
 <br>
 
-## <h2 class="section-heading" id="presentation"><a href="your_link_here"><img src="https://media.tenor.com/Tw7ociOZPzkAAAAM/spreadsheet-animated.gif" width="55" height="55"></a> Presentation</h2>
+## <h2 class="section-heading" id="insights-and-visualizations"><a href="your_link_here"><img src="https://media2.giphy.com/media/IateADsrO1rDOep6PY/giphy.gif?cid=6c09b952im399xndln3k3nwi7ts0zvuvxcg95q6yb6oe87sc&ep=v1_stickers_related&rid=giphy.gif&ct=s" width="50" height="50"></a> Insights and Visualizations</h2>
+ - `Doctor Fee Prediction.pdf`: Presentation showcasing project details and insights.
 
-- `Doctor Fee Prediction.pdf`: Presentation showcasing project details and insights.
 
-- `README.md`: Overview of the project, its structure, and usage instructions.
 
 <br>
 
-## <h2 class="section-heading" id="acknowledgments"><a href="your_link_here"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3364a095113117.5e8f786372e94.gif" width="50" height="50"></a> Acknowledgments</h2>
+## <h2 class="section-heading" id="challenges_and_learnings"><a href="your_link_here"><img src="https://media0.giphy.com/media/cExWgK1q0qha5oiuBb/giphy.gif?cid=6c09b952x5xjy8fxzog2yw0xljinbs7aw4jjwlay1r66t5w7&rid=giphy.gif&ct=s" width="50" height="50"></a> Challenges and Learnings</h2>
+ 
 
-We extend our appreciation to the mentors and faculty members for their guidance and support throughout the project.
+
+## <h2 class="section-heading" id="future_scope"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/214644145-264f4759-7633-441e-9d67-d8dda9d50d26.gif" width="60" height="60"></a> Future Scope</h2>
+
+
+
+## <h2 class="section-heading" id="conclusion"><a href="your_link_here"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/25b24795113117.5e8f78637283d.gif" width="50" height="50"></a> Conclusion</h2>
