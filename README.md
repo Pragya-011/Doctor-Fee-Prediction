@@ -13,10 +13,10 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 
 | Files/Folder| Description |
 | ------------- | ------------- |
-| **[`Python File`](#Python%20File)** | Review the data extraction process and preprocessing steps |
-| **[`Python File/ML_Models.ipynb`](#Python%20File/ML_Models.ipynb)** | Understand the machine learning model creation  |
-| **[`DATA`](#Data)** | Explore the raw and cleaned data  |
-| **[`Webpage`](#Webpage)** | Run the web page using the provided code |
+| *[`Python File`](Python%20File)* | Review the data extraction process and preprocessing steps |
+| *[`Python File/ML_Models.ipynb`](Python%20File/ML_Models.ipynb)* | Understand the machine learning model creation  |
+| *[`DATA`](Data)* | Explore the raw and cleaned data  |
+| *[`Webpage`](Webpage)* | Run the web page using the provided code |
 
 <br>
 
