@@ -23,8 +23,8 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 ## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="60" height="60"> **Table of Contents**
 
 - [`User's Manual`](#usage)
-- [`Project Overview`](#project-overview)
 - [`Problems Aim to Solve`](#objective)
+- [`Project Overview`](#project-overview)
 - [`Data Extraction`](#data-extraction)
 - [`Data Preprocessing`](#data-preprocessing)
 - [`Insights and Visualizations`](#insights-and-visualizations)
@@ -33,6 +33,11 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 - [`Challenges and Learnings`](#challenges_and_learnings)
 - [`Future Scope`](#future_scope)
 - [`Conclusion`](#conclusion)
+
+<br>
+
+## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://i.pinimg.com/originals/ca/d1/3b/cad13bab63529947fa266158bebf8c05.gif" width="50" height="50"></a> Problems Aim to Solve</h2>
+This project primarily aims to benefit patients in the healthcare sector. It provides a user-friendly platform for patients to estimate doctor's fees, enabling informed decision-making about medical expenses. By analyzing data on doctor specializations, experience levels, and regional fee variations, the project empowers patients to navigate the complex healthcare cost landscape. Its ultimate goal is to enhance transparency and affordability in healthcare, promoting patient-centered access to quality medical services.
 
 <br>
 
@@ -53,22 +58,14 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://i.pinimg.com/originals/ca/d1/3b/cad13bab63529947fa266158bebf8c05.gif" width="50" height="50"></a> Problems Aim to Solve</h2>
-This project primarily aims to benefit patients in the healthcare sector. It provides a user-friendly platform for patients to estimate doctor's fees, enabling informed decision-making about medical expenses. By analyzing data on doctor specializations, experience levels, and regional fee variations, the project empowers patients to navigate the complex healthcare cost landscape. Its ultimate goal is to enhance transparency and affordability in healthcare, promoting patient-centered access to quality medical services.
-
-
-<br>
-
-## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
-
 ## <h2 class="section-heading" id="data-extraction"><a href="your_link_here"><img src="https://www.formsright.ai/images/icons/gif/file-transfer.gif" width="40" height="40"></a> Data Extraction</h2>
-- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of the analysis. [`Scraping code`](Python%20File/Scraping%20code.ipynb) directory contains thr python script for web scraping. The collected data can be found in [`Raw practo`](Data/raw_practo.csv).
+The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of the analysis. [`Scraping code`](Python%20File/Scraping%20code.ipynb) directory contains thr python script for web scraping. The collected data can be found in [`Raw practo`](Data/raw_practo.csv).
 
 ## <h2 class="section-heading" id="data-preprocessing"><a href="your_link_here"><img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*mf619XEdHd1O2MlyhEKcig.gif" width="40" height="40"></a> Data Preprocessing</h2>
-- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data can be found in [`Clean practo`](Data/clean_practo.csv).
+Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data can be found in [`Clean practo`](Data/clean_practo.csv).
 
 ## <h2 class="section-heading" id="machine-learning-modeling"><a href="your_link_here"><img src="https://bugfender.com/wp-content/uploads/2018/10/automated.gif" width="40" height="40"></a> Machine Learning Modeling</h2>
-- In the model-building phase the data for training were diligently prepared. This involved the following process:
+`In the model-building phase the data for training were diligently prepared. This involved the following process:`
   - Encoding of categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales.
   - With the data ready, splitting was done into training and testing sets.
   - Next, various machine learning models were explored to predict doctor's fees.
@@ -82,7 +79,7 @@ The machine learning model is built using `Scikit-learn` and can be found in the
 ## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://i.pinimg.com/originals/45/a1/b5/45a1b55abd622e5a3b41992325f175bf.gif" width="50" height="50"></a> Web Application</h2>
 The project includes an interactive web application developed with `Flask`. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as [`Model`](Webpage/model.pkl), is integrated into the web application.
 
-### Directory Structure for Web Application
+### Directory Structure for Web Page
 
 - [`Application`](Webpage/app.py): Flask application handling user inputs and serving the web page.
 - [`Model`](Webpage/model.pkl): Trained machine learning model for predicting consultation fees.
