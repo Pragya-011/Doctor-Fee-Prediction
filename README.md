@@ -61,13 +61,13 @@ This project primarily aims to benefit patients in the healthcare sector. It pro
 
 ## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
-### Data Extraction
+## <h2 class="section-heading" id="data-extraction"><a href="your_link_here"><img src="https://www.formsright.ai/images/icons/gif/file-transfer.gif" width="40" height="40"></a> Data Extraction</h2>
 - The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of the analysis. [`Scraping code`](Python%20File/Scraping%20code.ipynb) directory contains thr python script for web scraping. The collected data can be found in [`Raw practo`](Data/raw_practo.csv).
 
-### Data Preprocessing
+## <h2 class="section-heading" id="data-preprocessing"><a href="your_link_here"><img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*mf619XEdHd1O2MlyhEKcig.gif" width="40" height="40"></a> Data Preprocessing</h2>
 - Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data can be found in [`Clean practo`](Data/clean_practo.csv).
 
-### Machine Learning Modeling
+## <h2 class="section-heading" id="machine-learning-modeling"><a href="your_link_here"><img src="https://www.enterpriseappstoday.com/wp-content/uploads/2022/09/Machine-Learning-Statistics-2.gif" width="40" height="40"></a> Machine Learning Modeling</h2>
 - In the model-building phase the data for training were diligently prepared. This involved the following process:
   - Encoding of categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales.
   - With the data ready, splitting was done into training and testing sets.
