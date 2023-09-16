@@ -5,8 +5,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/118491345/266513700-87067a09-c520-46e8-a4af-a333fec16500.gif" width="1100" ></p>
 <br>
 
-The **Doctor Fee Prediction** project revolutionizes healthcare decision-making. The data was harnessed from Practo, a leading healthcare platform, and applied advanced data analysis and machine learning to empower patients with accurate doctor fee estimates. By considering factors like specialization and experience, our user-friendly tool enhances transparency and aids in cost-effective healthcare choices. Join us as we explore how data science transforms the healthcare landscape, from data collection to predictive modeling and deployment. The project involves data extraction, preprocessing, model building, and an interactive web application.
-
+The **Doctor Fee Prediction** project revolutionizes healthcare decision-making. The data was harnessed from Practo, a leading healthcare platform, and advanced data analysis and machine learning were applied to empower patients with accurate doctor fee estimates. By considering factors like specialization and experience, our user-friendly tool enhances transparency and aids in cost-effective healthcare choices. Explore how data science transforms the healthcare landscape, from data collection to predictive modeling and deployment of an interactive web application.
 <br>
 
 ## <h2 class="section-heading" id="usage"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/106439762/181935629-b3c47bd3-77fb-4431-a11c-ff8ba0942b63.gif" width="50" height="50"></a> User's Manual</h2>
@@ -21,7 +20,7 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 
 <br>
 
-## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="48" height="48"> **Table of Contents**
+## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="60" height="60"> **Table of Contents**
 
 - [`User's Manual`](#usage)
 - [`Project Overview`](#project-overview)
@@ -63,27 +62,33 @@ This project primarily aims to benefit patients in the healthcare sector. It pro
 ## <a href="#python-files"><img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="45" height="45"></a> **Python Files**
 
 ### Data Extraction
-- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of your analysis. This is achieved using the Jupyter Notebook [`Scrapping code`](Python%20File/Scraping%20code.ipynb). The collected data is stored in [`Raw practo`](Data/raw_practo.csv).
+- The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of the analysis. [`Scraping code`](Python%20File/Scraping%20code.ipynb) directory contains thr python script for web scraping. The collected data can be found in [`Raw practo`](Data/raw_practo.csv).
 
 ### Data Preprocessing
-- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data is saved in [`Clean practo`](Data/clean_practo.csv).
+- Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data can be found in [`Clean practo`](Data/clean_practo.csv).
 
 ### Machine Learning Modeling
-- In the model-building phase of our project, we diligently prepared the data for training. This involved encoding categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales. With the data ready, we split it into training and testing sets. Next, we delved into exploring various machine learning models to predict doctor's fees. Following extensive testing and evaluation, we identified the RandomForestRegressor as the top-performing model, boasting the highest accuracy among all alternatives. We conducted rigorous performance assessments using metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE). Ultimately, we chose the RandomForestRegressor as our model of choice and saved it using the Pickle library, marking the completion of our model-building process for future deployment.
-The machine learning model is built using Scikit-learn and is implemented in the Jupyter Notebook [`ML Models`](Python%20File/ML_Models.ipynb).
+- In the model-building phase the data for training were diligently prepared. This involved the following process:
+  - Encoding of categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales.
+  - With the data ready, splitting was done into training and testing sets.
+  - Next, various machine learning models were explored to predict doctor's fees.
+  - Following extensive testing and evaluation, the `RandomForestRegressor` was identified as the top-performing model, boasting the highest accuracy among all alternatives.
+  - Then rigorous performance assessments were conducted using metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE).
+  - Ultimately, the RandomForestRegressor became the model of choice and it was saved using the Pickle library, marking the completion of the model-building process for future deployment.
+The machine learning model is built using `Scikit-learn` and can be found in the Jupyter Notebook [`ML Models`](Python%20File/ML_Models.ipynb).
 
 <br>
 
 ## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://i.pinimg.com/originals/45/a1/b5/45a1b55abd622e5a3b41992325f175bf.gif" width="50" height="50"></a> Web Application</h2>
-The project includes an interactive web application developed with Flask. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as [`Model`](Webpage/model.pkl), is integrated into the web application.
+The project includes an interactive web application developed with `Flask`. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as [`Model`](Webpage/model.pkl), is integrated into the web application.
 
 ### Directory Structure for Web Application
 
 - [`Application`](Webpage/app.py): Flask application handling user inputs and serving the web page.
 - [`Model`](Webpage/model.pkl): Trained machine learning model for predicting consultation fees.
-- [`Webpage Templates`](Webpage/templates): Directory containing the HTML template for the interactive web application.
-  - [`Webpage`](Webpage/templates/index.html): HTML template allowing users to input attributes and get predicted fees.
-  - [`Webpage`](Webpage/requirements.txt): Requirements of all necessary libraries.
+- [`Webpage`](Webpage/templates): Directory containing the HTML template for the interactive web application.
+  - [`Webpage Templates`](Webpage/templates/index.html): HTML template allowing users to input attributes and get predicted fees.
+  - [`Webpage Requirements`](Webpage/requirements.txt): Requirements of all necessary libraries.
 
        <img align="center" alt="Coding" lenght = "500" width="600" src="https://user-images.githubusercontent.com/118491345/266401208-eae93f76-f82f-4015-a2fb-222ff60fde77.png">
 
@@ -94,8 +99,8 @@ The project includes an interactive web application developed with Flask. The ap
 <br>
 
  - **`Geographical Distribution`**: Approximately 50% of the doctors are located in Bangalore, highlighting the city's significance in healthcare services.
- - **`Common Degrees`**: MBBS and BDS emerge as the most prevalent degrees among the doctors in your dataset, underscoring their popularity and importance in the medical field.
- - **`Dentistry Dominance`**: Dentists, as indicated by the high count, appear to be a prominent group within the dataset, reflecting the relevance of dental care in the healthcare system.
+ - **`Common Degrees`**: MBBS and BDS emerge as the most prevalent degrees among the doctors in the dataset, underscoring their popularity and importance in the medical field.
+ - **`Dentistry Dominance`**: Dentists, as indicated by the high count, appear to be a prominent group, reflecting the relevance of dental care in the healthcare system.
  - **`Experience Range`**: The majority of doctors fall within the 20-25 years of experience range, indicating a substantial presence of seasoned professionals.
  - **`Specialization Experience`**: Among different specializations, bariatric surgeons have the highest average years of experience, likely due to the complexity and specialized nature of their field. In contrast, chiropractors have the lowest average years of experience, possibly due to the nature of their practice, which may attract newer professionals.
    
