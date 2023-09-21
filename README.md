@@ -2,13 +2,13 @@
   Doctor-Fee-Prediction
 </h1>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/118491345/266513700-87067a09-c520-46e8-a4af-a333fec16500.gif" width="1100" ></p>
+<p align="center"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/4229521f-c063-46dd-88cf-ee4e956fb97c" width="1100" ></p>
 <br>
 
 The **Doctor Fee Prediction** project revolutionizes healthcare decision-making. The data was harnessed from Practo, a leading healthcare platform, and advanced data analysis and machine learning were applied to empower patients with accurate doctor fee estimates. By considering factors like specialization and experience, our user-friendly tool enhances transparency and aids in cost-effective healthcare choices. Explore how data science transforms the healthcare landscape, from data collection to predictive modeling and deployment of an interactive web application.
 <br>
 
-## <h2 class="section-heading" id="usage"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/106439762/181935629-b3c47bd3-77fb-4431-a11c-ff8ba0942b63.gif" width="50" height="50"></a> User's Manual</h2>
+## <h2 class="section-heading" id="usage"><a href="your_link_here"><img src="https://github.com/Pragya-011/Covid19-Analysis/assets/118491345/67ec35fd-902f-4d56-bb17-37b1b14cee15" width="50" height="50"></a> User's Manual</h2>
 
 | Files/Folder| Description |
 | ------------- | ------------- |
@@ -20,7 +20,7 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 
 <br>
 
-## <img src="https://clipartmag.com/images/pictures-of-animated-books-20.gif" width="60" height="60"> **Table of Contents**
+## <img src="https://github.com/Pragya-011/Covid19-Analysis/assets/118491345/57bfe149-df1c-4991-a4aa-f40f74c0e808" width="60" height="60"> **Table of Contents**
 
 - [`User's Manual`](#usage)
 - [`Problems Aim to Solve`](#objective)
@@ -36,17 +36,17 @@ The **Doctor Fee Prediction** project revolutionizes healthcare decision-making.
 
 <br>
 
-## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://i.pinimg.com/originals/ca/d1/3b/cad13bab63529947fa266158bebf8c05.gif" width="50" height="50"></a> Problems Aim to Solve</h2>
+## <h2 class="section-heading" id="objective"><a href="your_link_here"><img src="https://github.com/Pragya-011/Super-Store-Sales-Analysis/assets/118491345/851e4ce1-01e7-4576-af46-6247dc62bd98" width="50" height="50"></a> Problems Aim to Solve</h2>
 This project primarily aims to benefit patients in the healthcare sector. It provides a user-friendly platform for patients to estimate doctor's fees, enabling informed decision-making about medical expenses. By analyzing data on doctor specializations, experience levels, and regional fee variations, the project empowers patients to navigate the complex healthcare cost landscape. Its ultimate goal is to enhance transparency and affordability in healthcare, promoting patient-centered access to quality medical services.
 
 <br>
 
-## <h2 class="section-heading" id="project-overview"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/216121952-63f41409-6eb1-4a81-8b47-0d5d7c8552a4.png" width="50" height="50"></a> Project Overview</h2>
+## <h2 class="section-heading" id="project-overview"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/fc8f3d24-4339-41fa-8022-94ddca51d095" width="50" height="50"></a> Project Overview</h2>
 This project utilizes Python libraries such as NumPy and Pandas for data cleaning and preprocessing purposes. Matplotlib and Seaborn are used for data analysis and visualization. Scikit-learn (sklearn) is employed for building the machine learning model. Flask, HTML, and CSS are used to build an interactive website.
 
 The main objective is to predict doctor consultation fees based on the following attributes:
 
-<img align="right" alt="Coding" width="220" src="https://www.suyogcare.in/assets/img/%E2%81%ADgif2.gif">
+<img align="right" alt="Coding" width="220" src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/841a7ed6-f8fa-4c2a-b057-cb5d3d7f83e1">
 
 - `speciality_of_doctor`: Specialty of the doctor
 - `degree_type`: Type of degree (e.g., MBBS, MD, BDS)
@@ -58,13 +58,13 @@ The main objective is to predict doctor consultation fees based on the following
 
 <br>
 
-## <h2 class="section-heading" id="data-extraction"><a href="your_link_here"><img src="https://www.formsright.ai/images/icons/gif/file-transfer.gif" width="50" height="50"></a> Data Extraction</h2>
+## <h2 class="section-heading" id="data-extraction"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/0812117d-1f0f-4092-bbdc-c3cb31ba3f80" width="50" height="50"></a> Data Extraction</h2>
 The data extraction phase involved the use of Python libraries such as Selenium and BeautifulSoup to scrape valuable information from Practo, a healthcare website. This process enabled the collection of essential attributes including doctor specializations, years of experience, location, city, dp_score, consultation fees, and more, which formed the foundation of the analysis. [`Scraping code`](Python%20File/Scraping%20code.ipynb) directory contains thr python script for web scraping. The collected data can be found in [`Raw practo`](Data/raw_practo.csv).
 
-## <h2 class="section-heading" id="data-preprocessing"><a href="your_link_here"><img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*mf619XEdHd1O2MlyhEKcig.gif" width="50" height="50"></a> Data Preprocessing</h2>
+## <h2 class="section-heading" id="data-preprocessing"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/f76f676a-0514-47ff-9702-5652fb5bb692" width="50" height="50"></a> Data Preprocessing</h2>
 Once the data was gathered, the data preprocessing stage played a pivotal role in preparing it for analysis and machine learning. This encompassed tasks such as handling missing values, removing duplicates, and converting data types where necessary. In the preprocessing phase, exploratory data analysis was also performed on cleaned data. The Jupyter Notebook [`Preprocessing and EDA`](Python%20File/Preprocessing_EDA.ipynb) includes the cleaning and visualization code. The cleaned data can be found in [`Clean practo`](Data/clean_practo.csv).
 
-## <h2 class="section-heading" id="machine-learning-modeling"><a href="your_link_here"><img src="https://bugfender.com/wp-content/uploads/2018/10/automated.gif" width="50" height="50"></a> Machine Learning Modeling</h2>
+## <h2 class="section-heading" id="machine-learning-modeling"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/b5af2ecd-5f5a-498c-888d-3f6d740ada75" width="50" height="50"></a> Machine Learning Modeling</h2>
 `In the model-building phase the data for training were diligently prepared. This involved the following process:`
   - Encoding of categorical variables, such as doctor speciality and degree type, and applying feature scaling to ensure consistent feature scales.
   - With the data ready, splitting was done into training and testing sets.
@@ -76,7 +76,7 @@ The machine learning model is built using `Scikit-learn` and can be found in the
 
 <br>
 
-## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://i.pinimg.com/originals/45/a1/b5/45a1b55abd622e5a3b41992325f175bf.gif" width="50" height="50"></a> Web Application</h2>
+## <h2 class="section-heading" id="web-application"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/d9436915-584d-4d7f-a41d-05aea4a2ddbe" width="50" height="50"></a> Web Application</h2>
 The project includes an interactive web application developed with `Flask`. The application allows users to input values for `speciality_of_doctor`, `degree_type`, `year_of_experience`, `Location`, `city`, `dp_score`, and `npv_` to obtain a predicted consultation fee for doctors. The machine learning model, stored as [`Model`](Webpage/model.pkl), is integrated into the web application.
 
 ### Directory Structure for Web Page
@@ -87,12 +87,12 @@ The project includes an interactive web application developed with `Flask`. The 
   - [`Webpage Templates`](Webpage/templates/index.html): HTML template allowing users to input attributes and get predicted fees.
   - [`Webpage Requirements`](Webpage/requirements.txt): Requirements of all necessary libraries.
 
-       <img align="center" alt="Coding" lenght = "500" width="600" src="https://user-images.githubusercontent.com/118491345/266401208-eae93f76-f82f-4015-a2fb-222ff60fde77.png">
+       <img align="center" alt="Coding" lenght = "500" width="600" src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/74b5ecb7-7228-4d25-836c-30ce556cfb37">
 
 
 <br>
 
-## <h2 class="section-heading" id="insights-and-visualizations"><a href="your_link_here"><img src="https://media2.giphy.com/media/IateADsrO1rDOep6PY/giphy.gif?cid=6c09b952im399xndln3k3nwi7ts0zvuvxcg95q6yb6oe87sc&ep=v1_stickers_related&rid=giphy.gif&ct=s" width="50" height="50"></a> Insights and Visualizations</h2>
+## <h2 class="section-heading" id="insights-and-visualizations"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/d66ed6a2-3ee5-4741-ae5a-0e4ddf02ea7a" width="50" height="50"></a> Insights and Visualizations</h2>
 <br>
 
  - **`Geographical Distribution`**: Approximately 50% of the doctors are located in Bangalore, highlighting the city's significance in healthcare services.
@@ -111,7 +111,7 @@ The project includes an interactive web application developed with `Flask`. The 
 
 <br>
 
-## <h2 class="section-heading" id="challenges_and_learnings"><a href="your_link_here"><img src="https://media0.giphy.com/media/cExWgK1q0qha5oiuBb/giphy.gif?cid=6c09b952x5xjy8fxzog2yw0xljinbs7aw4jjwlay1r66t5w7&rid=giphy.gif&ct=s" width="50" height="50"></a> Challenges and Learnings</h2>
+## <h2 class="section-heading" id="challenges_and_learnings"><a href="your_link_here"><img src="https://github.com/Pragya-011/Covid19-Analysis/assets/118491345/00e60524-38a5-4d6a-ad9f-c4ce8fcd6ef1" width="50" height="50"></a> Challenges and Learnings</h2>
  - Effective Data Scraping: Mastering the art of efficient web data collection using Selenium and BeautifulSoup.
  - Feature Engineering Proficiency: Developing expertise in selecting and transforming relevant features for machine learning models.
  - Model Evaluation Skills: Gaining a deeper understanding of model evaluation metrics and techniques, particularly in the context of regression tasks.
@@ -121,7 +121,7 @@ The project includes an interactive web application developed with `Flask`. The 
  
 
 
-## <h2 class="section-heading" id="future_scope"><a href="your_link_here"><img src="https://user-images.githubusercontent.com/74038190/214644145-264f4759-7633-441e-9d67-d8dda9d50d26.gif" width="60" height="60"></a> Future Scope</h2>
+## <h2 class="section-heading" id="future_scope"><a href="your_link_here"><img src="https://github.com/Pragya-011/Covid19-Analysis/assets/118491345/1b05ac88-b052-4573-9218-0de1cf471817" width="60" height="60"></a> Future Scope</h2>
  - Real-Time Data Updates: Incorporate real-time data sources for up-to-the-minute fee estimations.
  - Geographic Expansion: Extend coverage to more cities and regions to provide a broader service.
  - Multi-Criteria Estimation: Enhance the model to consider patient reviews, clinic ratings, and appointment availability.
@@ -130,6 +130,6 @@ The project includes an interactive web application developed with `Flask`. The 
  - Patient Feedback System: Implement a feedback mechanism to refine the model's accuracy and improve user experience over time.
 
 
-## <h2 class="section-heading" id="conclusion"><a href="your_link_here"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/25b24795113117.5e8f78637283d.gif" width="50" height="50"></a> Conclusion</h2>
+## <h2 class="section-heading" id="conclusion"><a href="your_link_here"><img src="https://github.com/Pragya-011/Doctor-Fee-Prediction/assets/118491345/1646a2aa-2701-4a3c-bcff-ee26cf620f66" width="50" height="50"></a> Conclusion</h2>
 
 In summary, our project has successfully addressed key challenges in healthcare decision-making by providing patients with a user-friendly tool to estimate doctor's fees accurately. Leveraging data from Practo, information was analyzed and processed, revealing insightful trends such as the dominance of MBBS and BDS degrees, the prevalence of dentists, and the varying years of experience across specializations. The machine learning model, with the RandomForestRegressor as the top-performing choice, empowers patients to make informed choices, enhances transparency, and fosters cost-effective healthcare decisions. This project exemplifies the transformative potential of data science in healthcare, offering a practical solution that benefits both patients and healthcare providers.
